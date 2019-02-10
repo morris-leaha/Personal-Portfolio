@@ -1,0 +1,175 @@
+html, body {
+    /* background: 
+        url(../images/chris-lee-412433-unsplash1.jpg) 
+        no-repeat 
+        right center 
+        fixed;
+    background-size: cover; */
+    height: 100%;
+    font-family: 'Scope One', serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1 0 auto;
+}
+
+/* .main-content {
+    height: 90%;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(83, 82, 82,0.3);
+} */
+
+header {
+    margin-top: 2rem;
+}
+
+h1 {
+    padding-top: 1rem;
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(83, 82, 82);
+    text-transform: uppercase;
+}
+
+h4 {
+    text-align: center;
+    color: rgb(83, 82, 82);
+}
+
+/* .name-logo {
+    position: relative;
+    font-weight: 300;
+    font-size: 4.5em;
+    color: #402d2d;
+}
+  
+.name-logo .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+}
+  
+.name-logo .line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    background-color: #402d2d;
+    transform-origin: 0.5 0;
+}
+  
+.name-logo .star {
+    font-family: Baskerville, "EB Garamond", serif;
+    font-weight: 400;
+    width: 1em;
+    margin-right: -0.1em;
+    margin-left: -0.1em;
+}
+  
+.name-logo .letters {
+    display: inline-block;
+    opacity: 0;
+} */
+
+.nav-links {
+    text-align: center;
+    margin: 3rem 3rem 2rem 3rem;
+}
+
+.nav-links a {
+    padding: 0 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-links a:link {
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    font-weight: bold;
+}
+
+.nav-links a:visited {
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: none;
+    color: rgb(83, 82, 82);
+    border: 1px solid rgb(83, 82, 82);
+    font-weight: bold;
+}
+
+.nav-links a:active {
+    text-decoration: none;
+    color: rgb(83, 82, 82);
+    border: 1px solid rgb(83, 82, 82);
+    font-weight: bold;
+}
+
+.linkedin-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    height: 20rem;
+    width: 19rem;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.icons {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.icons a {
+    padding: 0 0.3rem;
+}
+
+.fab {
+    color: rgb(128, 128, 128);
+}
+
+span.fab:link {
+    color: rgb(128, 128, 128);
+}
+
+span.fab:visited {
+    color: rgb(128, 128, 128);
+}
+
+span.fab:hover {
+    color: rgb(83, 82, 82);
+    transform: translateY(2px);
+}
+
+span.fab:active {
+    color: rgb(83, 82, 82);
+    transform: translateY(5px);
+}
+
+hr {
+    width: 50%;
+}
+
+.sticky-footer {
+    flex-shrink: 0;
+    background: none;
+    text-align: center;
+    font-size: 0.65rem;
+}
