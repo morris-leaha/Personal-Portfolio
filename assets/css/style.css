@@ -83,42 +83,39 @@ h4 {
     opacity: 0;
 } */
 
-.nav-links {
+.nav-link-group {
     text-align: center;
+    text-transform: uppercase;
     margin: 3rem 3rem 2rem 3rem;
 }
 
-.nav-links a {
+.nav-link-group a {
     padding: 0 2rem;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.nav-links a:link {
+.nav-link-group a:link {
     text-decoration: none;
     color: rgb(128, 128, 128);
-    font-weight: bold;
 }
 
-.nav-links a:visited {
+.nav-link-group a:visited {
     text-decoration: none;
-    color: rgb(128, 128, 128);
-    font-weight: bold;
+    color: rgb(114, 113, 113);
 }
 
-.nav-links a:hover {
+.nav-link-group a:hover {
     text-decoration: none;
     color: rgb(83, 82, 82);
     border: 1px solid rgb(83, 82, 82);
-    font-weight: bold;
 }
 
-.nav-links a:active {
+.nav-link-group a:active {
     text-decoration: none;
     color: rgb(83, 82, 82);
     border: 1px solid rgb(83, 82, 82);
-    font-weight: bold;
 }
 
 .linkedin-photo {
@@ -134,7 +131,7 @@ h4 {
 .icons {
     text-align: center;
     margin-top: 1.5rem;
-    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .icons a {
@@ -172,4 +169,54 @@ hr {
     background: none;
     text-align: center;
     font-size: 0.65rem;
+}
+
+@media screen and (max-width: 768px) {
+    hr {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    hr {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    hr {
+        width: 85%;
+    }
+
+    .nav-link-group a {
+        display: block;
+        margin: 1rem;
+        padding: 0.25rem;
+        width: 50%;
+        margin: 0.5rem auto;
+    }
+}
+
+@media screen and (max-width: 445px) {
+
+    hr {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 392px) {
+    h1 {
+        font-size: 3.25rem;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    h1 {
+        font-size: 2.75rem;
+    }
 }
