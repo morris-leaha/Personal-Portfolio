@@ -5,6 +5,7 @@ html, body {
         right center 
         fixed;
     background-size: cover; */
+    scroll-behavior: smooth; 
     height: 100%;
     font-family: 'Scope One', serif;
 }
@@ -26,11 +27,14 @@ body {
 } */
 
 header {
-    margin-top: 2rem;
+    margin-top: 4.5rem;
+}
+
+.main-content {
+    height: 500px;
 }
 
 h1 {
-    padding-top: 2rem;
     font-size: 4rem;
     text-align: center;
     color: rgb(83, 82, 82);
@@ -93,6 +97,27 @@ h4 {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+/* .about-text {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    width: 50%;
+    text-align: justify;
+}
+
+.about-text > p {
+    margin: 1rem auto;
+}
+
+.about-text p:first-child {
+    margin-top: 0;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+} */
+
+
 .nav-link-group {
     text-align: center;
     text-transform: uppercase;
@@ -131,7 +156,7 @@ h4 {
 .icons {
     text-align: center;
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .icons a {
@@ -164,12 +189,44 @@ hr {
     width: 50%;
 }
 
+/* ========== ABOUT SECTION ========== */
+
+.about-header {
+    margin-top: 15rem;
+    padding-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.about-section {
+    text-align: center;
+    width: 75%;
+    height: 500px;
+    margin: 10rem auto;
+}
+
+.about-text > p {
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+/* ========== PORTFOLIO SECTION ========== */
+
+
+/* ========== CONTACT SECTION ========== */
+
+/* ========== FOOTER SECTION ========== */
+
 .sticky-footer {
     flex-shrink: 0;
     background: none;
     text-align: center;
     font-size: 0.65rem;
 }
+
+/* ========== MEDIA QUERIES ========== */
 
 @media screen and (max-width: 768px) {
     hr {
