@@ -1,3 +1,4 @@
+// Smooth scrolling function adapted from W3 Schools at: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
 $(document).ready(function(){
     // Add smooth scrolling to all links
     $("a").on('click', function(event) {
@@ -27,7 +28,8 @@ $(document).ready(function(){
 // adapted from W3 Schools at: https://www.w3schools.com/howto/howto_js_sticky_header.asp
 window.onscroll = function() {
   navbarSticky();
-}
+  scrollFunction();
+};
 
 // Get the header
 var navbar = document.getElementById("nav");
@@ -44,6 +46,19 @@ function navbarSticky() {
   }
 }
 
+function scrollFunction() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    document.getElementById("topBtn").style.display = "block";
+  } else {
+    document.getElementById("topBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 
 

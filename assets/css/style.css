@@ -247,6 +247,28 @@ h2 {
     padding: 2.5rem 0 2rem 0;
 }
 
+/* ========== GO TO TOP BUTTON SECTION ========== */
+
+#topBtn {
+    display: none; 
+    position: fixed;
+    bottom: 9px; 
+    right: 19px; 
+    z-index: 99;
+    border: none; 
+    outline: none; 
+    background-color: rgb(128, 128, 128);  
+    color: white; 
+    cursor: pointer; 
+    padding: 10px; 
+    font-size: 18px; 
+}
+  
+#topBtn:hover {
+    background-color: rgba(83, 82, 82, 0.897); /* Add a dark-grey background on hover */
+}
+
+
 /* ========== FOOTER SECTION ========== */
 
 .sticky-footer {
