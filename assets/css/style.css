@@ -19,19 +19,8 @@ body {
     flex: 1 0 auto;
 }
 
-/* .main-content {
-    height: 90%;
-    width: 50%;
-    margin: 0 auto;
-    background-color: rgba(83, 82, 82,0.3);
-} */
-
-header {
-    margin-top: 4.5rem;
-}
-
 .main-content {
-    height: 500px;
+    height: 550px;
 }
 
 h1 {
@@ -39,6 +28,10 @@ h1 {
     text-align: center;
     color: rgb(83, 82, 82);
     text-transform: uppercase;
+}
+
+.name {
+    margin-top: 4.5rem;
 }
 
 h4 {
@@ -192,7 +185,6 @@ hr {
 /* ========== ABOUT SECTION ========== */
 
 .about-header {
-    margin-top: 15rem;
     padding-bottom: 2rem;
 }
 
@@ -203,8 +195,9 @@ h2 {
 .about-section {
     text-align: center;
     width: 75%;
-    height: 500px;
+    height: 550px;
     margin: 10rem auto;
+    padding-top: 4.5rem;
 }
 
 .about-text > p {
@@ -214,8 +207,23 @@ h2 {
 
 /* ========== PORTFOLIO SECTION ========== */
 
+.portfolio-section {
+    text-align: center;
+    width: 75%;
+    height: 550px;
+    margin: 10rem auto;
+    padding-top: 4.5rem;
+}
 
 /* ========== CONTACT SECTION ========== */
+
+.contact-section {
+    text-align: center;
+    width: 75%;
+    height: 550px;
+    margin: 10rem auto;
+    padding-top: 4.5rem;
+}
 
 /* ========== FOOTER SECTION ========== */
 
