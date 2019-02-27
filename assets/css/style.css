@@ -20,7 +20,7 @@ body {
 }
 
 .main-content {
-    height: 550px;
+    height: 500px;
 }
 
 h1 {
@@ -182,22 +182,36 @@ hr {
     width: 50%;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    margin: 0 auto;
+    padding: 2rem;
+    border-bottom: 0.5px solid;
+}
+  
+.sticky + .content {
+    padding-top: 102px;
+}
+
 /* ========== ABOUT SECTION ========== */
-
-.about-header {
-    padding-bottom: 2rem;
-}
-
-h2 {
-    font-size: 2.5rem;
-}
 
 .about-section {
     text-align: center;
     width: 75%;
-    height: 550px;
+    height: 500px;
     margin: 10rem auto;
-    padding-top: 4.5rem;
+    padding-top: 5rem;
+}
+
+.about-header {
+    padding: 2.5rem 0 2rem 0;
+}
+
+h2 {
+    font-size: 2.5rem;
 }
 
 .about-text > p {
@@ -210,9 +224,13 @@ h2 {
 .portfolio-section {
     text-align: center;
     width: 75%;
-    height: 550px;
+    height: 500px;
     margin: 10rem auto;
     padding-top: 4.5rem;
+}
+
+.portfolio-header {
+    padding: 2.5rem 0 2rem 0;
 }
 
 /* ========== CONTACT SECTION ========== */
@@ -220,9 +238,13 @@ h2 {
 .contact-section {
     text-align: center;
     width: 75%;
-    height: 550px;
+    height: 480px;
     margin: 10rem auto;
     padding-top: 4.5rem;
+}
+
+.contact-header {
+    padding: 2.5rem 0 2rem 0;
 }
 
 /* ========== FOOTER SECTION ========== */
