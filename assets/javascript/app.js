@@ -47,7 +47,7 @@ function navbarSticky() {
 }
 
 function scrollFunction() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+  if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
     document.getElementById("topBtn").style.display = "block";
   } else {
     document.getElementById("topBtn").style.display = "none";
