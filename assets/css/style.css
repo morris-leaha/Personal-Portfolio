@@ -85,6 +85,7 @@ h4 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
+    margin-bottom: 1rem;
     height: 20rem;
     width: 19rem;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -113,7 +114,9 @@ h4 {
 
 
 .nav-link-group {
-    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     text-transform: uppercase;
     margin: 3rem 3rem 2rem 3rem;
 }
@@ -158,6 +161,11 @@ h4 {
     color: rgb(128, 128, 128);
 }
 
+.icons span {
+    padding: 0 0.3rem;
+    color: rgb(128, 128, 128);
+}
+
 span.fab:link {
     color: rgb(128, 128, 128);
 }
@@ -194,8 +202,26 @@ span.far:active {
     transform: translateY(4px);
 }
 
+span.fas:link {
+    color: rgb(128, 128, 128);
+}
+
+span.fas:visited {
+    color: rgb(128, 128, 128);
+}
+
+span.fas:hover {
+    color: rgb(83, 82, 82);
+    transform: translateY(2px);
+}
+
+span.fas:active {
+    color: rgb(83, 82, 82);
+    transform: translateY(4px);
+}
+
 hr {
-    width: 50%;
+    width: 80%;
 }
 
 .sticky {
@@ -204,7 +230,7 @@ hr {
     width: 100%;
     background: white;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem 0 2rem 0;
     border-bottom: 0.5px solid;
 }
   
@@ -296,25 +322,25 @@ h2 {
 
 /* ========== MEDIA QUERIES ========== */
 
-@media screen and (max-width: 1225px) {
+/* @media screen and (max-width: 1225px) {
     hr {
         width: 60%;
     }
-}
+} */
 
-@media screen and (max-width: 1045px) {
+/* @media screen and (max-width: 1045px) {
     hr {
         width: 70%;
     }
-}
-
+} */
+/* 
 @media screen and (max-width: 930px) {
     hr {
         width: 80%;
     }
-}
+} */
 
-@media screen and (max-width: 808px) {
+/* @media screen and (max-width: 808px) {
     h1.name {
         font-size: 3.5rem;
     }
@@ -327,9 +353,9 @@ h2 {
         text-transform: uppercase;
         font-weight: bold;
     }
-}
+} */
 
-@media screen and (max-width: 645px) {
+/* @media screen and (max-width: 645px) {
     hr {
         width: 80%;
     }
@@ -339,9 +365,9 @@ h2 {
         text-transform: uppercase;
         font-weight: bold;
     }
-}
+} */
 
-@media screen and (max-width: 525px) {
+/* @media screen and (max-width: 525px) {
     h1.name {
         margin-top: 3.5rem;
         font-size: 3.5rem;
@@ -362,7 +388,7 @@ h2 {
         width: 45%;
         margin: 0.5rem auto;
     }
-}
+} */
 /* 
 @media screen and (max-width: 445px) {
 
@@ -372,14 +398,14 @@ h2 {
 
 } */
 
-@media screen and (max-width: 392px) {
+/* @media screen and (max-width: 392px) {
     h1 {
         font-size: 3.25rem;
     }
-}
+} */
 
-@media screen and (max-width: 340px) {
+/* @media screen and (max-width: 340px) {
     h1 {
         font-size: 2.75rem;
     }
-}
+} */
