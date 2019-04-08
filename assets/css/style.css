@@ -88,6 +88,7 @@ h4 {
     height: 20rem;
     width: 19rem;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 50%;
 }
 
 /* .about-text {
@@ -118,7 +119,7 @@ h4 {
 }
 
 .nav-link-group a {
-    padding: 0 2rem;
+    padding: 2px 50px 0 50px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -154,9 +155,6 @@ h4 {
 
 .icons a {
     padding: 0 0.3rem;
-}
-
-.fab {
     color: rgb(128, 128, 128);
 }
 
@@ -176,6 +174,24 @@ span.fab:hover {
 span.fab:active {
     color: rgb(83, 82, 82);
     transform: translateY(5px);
+}
+
+span.far:link {
+    color: rgb(128, 128, 128);
+}
+
+span.far:visited {
+    color: rgb(128, 128, 128);
+}
+
+span.far:hover {
+    color: rgb(83, 82, 82);
+    transform: translateY(2px);
+}
+
+span.far:active {
+    color: rgb(83, 82, 82);
+    transform: translateY(4px);
 }
 
 hr {
@@ -280,43 +296,81 @@ h2 {
 
 /* ========== MEDIA QUERIES ========== */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1225px) {
     hr {
         width: 60%;
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1045px) {
     hr {
         width: 70%;
     }
 }
 
-@media screen and (max-width: 530px) {
-    h1 {
-        font-size: 3.5rem;
-    }
-
+@media screen and (max-width: 930px) {
     hr {
-        width: 85%;
-    }
-
-    .nav-link-group a {
-        display: block;
-        margin: 1rem;
-        padding: 0.25rem;
-        width: 50%;
-        margin: 0.5rem auto;
+        width: 80%;
     }
 }
 
+@media screen and (max-width: 808px) {
+    h1.name {
+        font-size: 3.5rem;
+    }
+    hr {
+        width: 80%;
+    }
+    .nav-link-group a {
+        padding: 2px 30px 0 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    hr {
+        width: 80%;
+    }
+    .nav-link-group a {
+        padding: 2px 15px 0 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    h1.name {
+        margin-top: 3.5rem;
+        font-size: 3.5rem;
+    }
+    .linkedin-photo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        height: 15rem;
+        width: 14rem;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border-radius: 50%;
+    }
+    .nav-link-group a {
+        display: block;
+        padding: 5px 0 3px 0;
+        width: 45%;
+        margin: 0.5rem auto;
+    }
+}
+/* 
 @media screen and (max-width: 445px) {
 
     hr {
         width: 90%;
     }
 
-}
+} */
 
 @media screen and (max-width: 392px) {
     h1 {
