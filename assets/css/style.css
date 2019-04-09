@@ -290,7 +290,7 @@ h2 {
 
 .col img {
     width: 100%;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     vertical-align: middle;
     box-shadow: 5px 5px 20px 0px rgba(53, 53, 53, 0.31);
 }
@@ -315,9 +315,21 @@ h2 {
 
 .project-name {
     margin-bottom: 5px;
+    font-weight: bolder;
 }
+
 .project-github, .project-deployed {
-    color: white;
+    color: rgb(255, 255, 255);
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+a.project-github:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+a.project-deployed:hover {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 /* ========== CONTACT SECTION ========== */
