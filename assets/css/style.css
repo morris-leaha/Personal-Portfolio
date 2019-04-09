@@ -259,8 +259,10 @@ h2 {
 }
 
 .about-text > p {
-    line-height: 1.5rem;
+    line-height: 2.5rem;
+    font-size: 24px;
     text-align: justify;
+    margin-top: 2rem;
 }
 
 /* ========== PORTFOLIO SECTION ========== */
