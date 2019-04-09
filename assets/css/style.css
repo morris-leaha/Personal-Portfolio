@@ -8,6 +8,7 @@ html, body {
     scroll-behavior: smooth; 
     height: 100%;
     font-family: 'Scope One', serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -232,6 +233,7 @@ hr {
     margin: 0 auto;
     padding: 2rem 0 2rem 0;
     border-bottom: 0.5px solid;
+    z-index: 1000;
 }
   
 .sticky + .content {
@@ -266,13 +268,56 @@ h2 {
 .portfolio-section {
     text-align: center;
     width: 75%;
-    height: 500px;
     margin: 10.5rem auto;
     padding-top: 4.5rem;
 }
 
 .portfolio-header {
     padding: 2.5rem 0 2rem 0;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    position: relative;
+    flex: 33%;
+    max-width: 50%;
+    padding: 0px 10px;
+}
+
+.col img {
+    width: 100%;
+    margin-top: 20px;
+    vertical-align: middle;
+    box-shadow: 5px 5px 20px 0px rgba(53, 53, 53, 0.31);
+}
+
+.project-links {
+    position: relative; 
+    bottom: 83px; 
+    background: rgba(150, 150, 150, 0.7);
+    color: #f1f1f1; 
+    width: 93%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 18px;
+    text-align: center;
+}
+
+.col:hover .project-links {
+    opacity: 1;
+}
+
+.project-name {
+    margin-bottom: 5px;
+}
+.project-github, .project-deployed {
+    color: white;
 }
 
 /* ========== CONTACT SECTION ========== */
