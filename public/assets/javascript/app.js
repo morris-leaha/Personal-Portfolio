@@ -1,32 +1,53 @@
 // Smooth scrolling function adapted from W3 Schools at: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
-$(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-  
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-  
-        // Store hash
-        var hash = this.hash;
-  
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 300, function(){
-  
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
+$(document).ready(function () {
+  // Add smooth scrolling to all links
+  $("a").on('click', function (event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 300, function () {
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
   });
+
+  $(document).on("click", ".submit-btn", insertContact);
+
+
+  function insertContact(event) {
+    event.preventDefault();
+    var contact = {
+      name: $("#name").val().trim(),
+      email: $("#email").val().trim(),
+      subject: $("#subject").val().trim(),
+      textArea: $("#textArea").val().trim()
+    };
+    console.log(contact);
+    $.ajax({
+      url: "/api/contact",
+      type: "POST",
+      data: contact,
+    });
+    window.location.href = "/index";
+  };
+
+});
 
 // When the user scrolls the page, execute myFunction 
 // adapted from W3 Schools at: https://www.w3schools.com/howto/howto_js_sticky_header.asp
-window.onscroll = function() {
+window.onscroll = function () {
   navbarSticky();
   scrollFunction();
 };
@@ -65,8 +86,8 @@ function topFunction() {
 
 
 
-  
-  
+
+
 // anime.timeline({loop: true})
 //   .add({
 //     targets: '.name-logo .line',
@@ -112,4 +133,3 @@ function topFunction() {
 //   });
 
 
-  

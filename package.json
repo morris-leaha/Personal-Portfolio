@@ -1,0 +1,25 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "Professional Portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morris-leaha/Personal-Portfolio.git"
+  },
+  "author": "Leah M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morris-leaha/Personal-Portfolio/issues"
+  },
+  "homepage": "https://github.com/morris-leaha/Personal-Portfolio#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7",
+    "sequelize": "^5.3.5"
+  }
+}

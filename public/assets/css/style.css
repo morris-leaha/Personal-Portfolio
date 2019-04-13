@@ -245,7 +245,6 @@ hr {
 .about-section {
     text-align: center;
     width: 75%;
-    height: 500px;
     margin: 10.5rem auto;
     padding-top: 4.5rem;
 }
@@ -352,7 +351,7 @@ a.project-deployed:hover {
 .contact-section {
     text-align: center;
     width: 75%;
-    height: 480px;
+    height: 460px;
     margin: 10.5rem auto;
     padding-top: 4.5rem;
 }
