@@ -53,6 +53,12 @@ $(document).ready(function () {
     }
   }
 
+  $(".fa-phone-square").on("click", function () {
+    var phoneDiv = $("<span class='phone'>");
+    phoneDiv.html(": (937)-658-0651");
+    $("#phone").append(phoneDiv);
+  });
+
   // $(document).on("click", ".submit-btn", insertContact);
 
 
@@ -76,7 +82,7 @@ $(document).ready(function () {
 });
 
 // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
