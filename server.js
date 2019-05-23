@@ -2,7 +2,7 @@
 
 var express = require("express");
 var path = require("path");
-var db = require("./models");
+// var db = require("./models");
 
 // ============ EXPRESS CONFIG ===========
 
@@ -17,23 +17,23 @@ app.use(express.static("public"));
 
 // ============= ROUTER INFO ==============
 
-require("./routes/apiRoutes")(app);
-var syncOptions = { force: false };
+// require("./routes/apiRoutes")(app);
+// var syncOptions = { force: false };
 
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "public/assets/index.html"));
-  });
+app.get("/", function (req, res) {
+  res.sendFile(path.join(__dirname, "public/assets/index.html"));
+});
 
 // ============= LISTENER INFO =============
 
-db.sequelize.sync(syncOptions).then(function() {
-    app.listen(PORT, function() {
-      console.log(
-        "==> Listening on port %s. Visit http://localhost:%s/ in your browser.",
-        PORT,
-        PORT
-      );
-    });
-  });
+
+app.listen(PORT, function () {
+  console.log(
+    "==> Listening on port %s. Visit http://localhost:%s/ in your browser.",
+    PORT,
+    PORT
+  );
+});
+
 
 module.exports = app;
