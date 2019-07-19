@@ -20,6 +20,6 @@
   "dependencies": {
     "express": "^4.16.4",
     "path": "^0.12.7",
-    "sequelize": "^5.3.5"
+    "sequelize": "^6.0.0"
   }
 }
